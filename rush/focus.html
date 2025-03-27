@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIRAPAT PAKKAWIN - Music Producer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            overflow: auto;
+            height: 100%;
+            position: relative;
+            color: #fff;
+            z-index: 0;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8); 
+            padding: 10px 0;
+            text-align: center;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5em;
+            margin: 0 20px;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #f1c40f;
+            border-radius: 5px;
+        }
+
+       
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2; 
+        }
+
+        .video-background iframe {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: -1; 
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 55px 20px; 
+            text-align: center;
+            color: #fff; 
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #f1c40f;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            z-index: 1;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #f1c40f;
+        }
+
+        .bio, .services, .contact, .media {
+            margin-bottom: 20px;
+        }
+
+        .bio p, .services ul, .contact form {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #fff;
+        }
+
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services li {
+            padding: 10px;
+            border-bottom: 1px solid #444;
+        }
+
+        .contact form button {
+            background-color: #f1c40f;
+            border: none;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #f1c40f;
+            padding: 10px;
+        }
+
+        .bio img {
+            display: block;
+            max-width: 80%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        .media iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 80px);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact a {
+            text-decoration: none;
+        }
+
+        .contact button {
+            background-color: #f1c40f;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact button:hover {
+            background-color: #e1b01f;
+        }
+
+        
+        #about, #past-work, #contact {
+            padding-top: 80px; 
+        }
+
+    </style>
+</head>
+<body>
+
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#past-work">My Work</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+
+<div class="video-background">
+    <iframe src="https://www.youtube.com/embed/NrfYjfy1S10?autoplay=1&loop=1&playlist=NrfYjfy1S10&mute=1&controls=0&showinfo=0&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+
+<div class="overlay"></div>
+
+<header>
+    <h1>JIRAPAT PAKKAWIN</h1>
+    <p>Music Producer</p>
+</header>
+
+
+<section id="about" class="bio">
+    <h2>About Me</h2>
+    <p>Hi! I’m JIRAPAT PAKKAWIN, a passionate music producer with years of experience in creating, mixing, and mastering tracks. My goal is to deliver the perfect sound that resonates with audiences and stands the test of time. Whether you're a musician looking to bring your vision to life or a brand needing original music, I’m here to make your ideas a reality.</p>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1aaHgAj9sFO4-JuV4tSCEKNVqADX7G78B9Q&s" alt="JIRAPAT PAKKAWIN" />
+</section>
+
+
+<section id="past-work" class="media">
+    <h2>Watch My Work</h2>
+    <p>Check out my latest work and projects on YouTube below:</p>
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/KgJRYhFdHoU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<section class="services">
+    <h2>My Services</h2>
+    <ul>
+        <li>Custom Music Production</li>
+        <li>Sound Design & Engineering</li>
+        <li>Mixing & Mastering</li>
+        <li>Music for Film & TV</li>
+        <li>Collaboration with Artists</li>
+    </ul>
+</section>
+
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    
+    <a href="https://www.instagram.com/4cusonme_jp/" target="_blank">
+        <button>Visit My Instagram</button>
+    </a>
+</section>
+
+<footer>
+    <p>© 2025 JIRAPAT PAKKAWIN. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
